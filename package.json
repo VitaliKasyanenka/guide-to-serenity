@@ -1,0 +1,32 @@
+{
+  "name": "guide-to-serenity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "node_modules/.bin/rimraf target",
+    "pretest": "node_modules/.bin/serenity update",
+    "test": "node_modules/.bin/protractor ./protractor.conf.js",
+    "report": "node_modules/.bin/serenity run",
+    "e2e": "failsafe clean test report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/chai-as-promised": "0.0.31",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.17",
+    "chai": "^4.1.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-smoothie": "^0.3.1",
+    "mocha": "^3.5.0",
+    "npm-failsafe": "^0.2.1",
+    "protractor": "^5.1.2",
+    "rimraf": "^2.6.1",
+    "serenity-cli": "^0.5.0",
+    "serenity-js": "^1.8.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  }
+}
